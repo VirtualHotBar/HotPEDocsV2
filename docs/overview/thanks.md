@@ -31,7 +31,7 @@
 [@优捷易_51CxSoft.com](https://www.51cxsoft.com/)
 
 ## 捐赠HotPE的各位网友
-[捐赠列表](https://docs.hotpe.top/#/overview/donate)
+[捐赠列表](https://docs.hotpe.top/overview/donate.html)
 
 ## 模块
 
