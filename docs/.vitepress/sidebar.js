@@ -23,7 +23,7 @@ export default [
     text: "常见问题",
     items: [
       { text: "HotPE是什么？", link: "/matter/what_winpe" },
-      { text: "是否有后门,流氓行为，配置加密？", link: "/matter/safety" },
+      { text: "是否有后门,流氓行为？", link: "/matter/safety" },
       { text: "HotPE支持WIFI吗？", link: "/matter/wifi" },
       { text: "为什么AIDA64没有图标？", link: "/matter/aida64" },
       { text: "为什么启动LOGO不清晰？", link: "/matter/bootlogo.md" },
@@ -36,7 +36,7 @@ export default [
       { text: "如何进入HotPE", link: "/course/intohotpe" },
       { text: "如何加载HotPE模块", link: "/course/loadhpm" },
       { text: "使用Edgeless插件", link: "/course/edgeless" },
-      { text: "添加自定义驱动，打包成HotPE模块", link: "/course/driver_hpm" },
+      { text: "将驱动打包成HotPE模块", link: "/course/driver_hpm" },
     ]
   }, {
     text: "开发者文档",
