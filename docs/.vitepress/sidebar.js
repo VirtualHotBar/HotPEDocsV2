@@ -6,35 +6,17 @@ export default [
   {
     text: "开始",
     items: [
-      {
-        text: "写在前面",
-        link: "/started",
-      },
+      { text: "写在前面", link: "/started", },
     ],
   },
   {
     text: "总览",
     items: [
-      {
-        text: "状态",
-        link: "/overview/state",
-      },
-      {
-        text: "关于",
-        link: "/overview/about",
-      },
-      {
-        text: "感谢",
-        link: "/overview/thanks",
-      },
-      {
-        text: "用户协议",
-        link: "/overview/contract",
-      },
-      {
-        text: "捐赠列表",
-        link: "/overview/donate",
-      },
+      { text: "状态", link: "/overview/state", },
+      { text: "关于", link: "/overview/about", },
+      { text: "感谢", link: "/overview/thanks", },
+      { text: "用户协议", link: "/overview/contract", },
+      { text: "捐赠列表", link: "/overview/donate", },
     ],
   },
   {
@@ -59,12 +41,12 @@ export default [
   }, {
     text: "开发者文档",
     items: [
-      { text: "须知", link: "/Devdoc/notice" },
-      { text: "环境", link: "/Devdoc/dve_env" },
-      { text: "制作HotPE模块", link: "/Devdoc/makehpm" },
-      { text: "模块投稿", link: "/Devdoc/hpm_con" },
-      { text: "PE集成HotPE模块", link: "/Devdoc/shifthpm" },
-      { text: "修改HotPE成为分支", link: "/Devdoc/branch" },
+      { text: "须知", link: "/devdoc/notice" },
+      { text: "环境", link: "/devdoc/dve_env" },
+      { text: "制作HotPE模块", link: "/devdoc/makehpm" },
+      { text: "模块投稿", link: "/devdoc/hpm_con" },
+      { text: "PE集成HotPE模块", link: "/devdoc/shifthpm" },
+      { text: "修改HotPE成为分支", link: "/devdoc/branch" },
     ]
   }, {
     text: "合作洽谈",
