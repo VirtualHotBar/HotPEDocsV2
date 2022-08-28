@@ -1,0 +1,17 @@
+{
+  "name": "hotpe-docs",
+  "version": "2.0.0",
+  "description": "HotPEDocs",
+  "main": "index.js",
+  "author": "VirtualHotBar",
+  "license": "MIT",
+  "dependencies": {
+    "vitepress": "^1.0.0-alpha.12"
+  },
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "serve": "vitepress serve docs"
+  },
+  "packageManager": "yarn@3.2.1"
+}
