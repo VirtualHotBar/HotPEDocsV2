@@ -8,7 +8,7 @@ export default defineConfig({
   lastUpdated: true,
   base: "/",
   themeConfig: {
-    logo: "./favicon.ico",
+    logo: "https://www.hotpe.top/Other/HotPE_logo.png",
     sidebar,
     nav: [
       {
