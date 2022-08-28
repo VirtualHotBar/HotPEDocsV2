@@ -29,10 +29,6 @@ export default defineConfig({
         text: "下载站",
         link: "https://down.hotpe.top/",
       },
-      {
-        text: "GitHub",
-        link: "https://www.hotpe.top/CodeWarehouse",
-      },
     ],
     footer: {
       message: "Released under the MIT License.",
@@ -49,7 +45,7 @@ export default defineConfig({
     },
     lastUpdatedText: "最近更新于",
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/VirtualHotBar/HotPEToolBox' }
+      { icon: 'github', link: 'https://www.hotpe.top/CodeWarehouse' }
     ],
   },
 });
