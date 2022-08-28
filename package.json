@@ -1,7 +1,7 @@
 {
   "name": "hotpe-docs",
   "version": "2.0.0",
-  "description": "HotPE Docs",
+  "description": "HotPEDocs",
   "main": "index.js",
   "author": "VirtualHotBar",
   "license": "MIT",
