@@ -13,12 +13,12 @@ export default defineConfig({
       'link',
       {
         rel: 'icon',
-        href: 'https://www.hotpe.top/wp-content/uploads/2022/04/logo.ico',
+        href: './favicon.ico',
       },
     ],
   ],
   themeConfig: {
-    logo: "https://www.hotpe.top/wp-content/uploads/2022/04/logo.ico",
+    logo: "./favicon.ico",
     sidebar,
     nav: [
       {
