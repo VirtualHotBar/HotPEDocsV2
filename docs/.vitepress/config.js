@@ -13,12 +13,12 @@ export default defineConfig({
       'link',
       {
         rel: 'icon',
-        href: './favicon.ico',
+        href: '/favicon.ico',
       },
     ],
   ],
   themeConfig: {
-    logo: "./favicon.ico",
+    logo: "/favicon.ico",
     sidebar,
     nav: [
       {
