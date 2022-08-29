@@ -11,7 +11,7 @@ hero:
   tagline: 
   actions:
     - theme: brand
-      text: 快速开始
+      text: 开始阅读
       link: /started
     - theme: alt
       text: 查看仓库
