@@ -3,9 +3,9 @@
 
 ## LOGO
 ### 图标
-![](./favicon.ico)
+![](/favicon.ico)
 ### 图标+文字
-![](./logo_1.png)
+![](/logo_1.png)
 
 
 
