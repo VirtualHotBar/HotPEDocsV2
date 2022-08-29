@@ -3,9 +3,9 @@
 
 ## LOGO
 ### 图标
-![](https://www.hotpe.top/wp-content/uploads/2022/04/logo.ico)
+![](./favicon.ico)
 ### 图标+文字
-![](https://www.hotpe.top/wp-content/uploads/2021/10/-010-2-e1634435598637-1024x297.png)
+![](./logo_1.png)
 
 
 
