@@ -36,4 +36,4 @@
 ![](https://i.hotpe.top/i/2022/05/02/10iuqdy.png)
 
 
-制作完成后请在HotPE中测试，没有问题后就可以 [投稿模块](https://docs.hotpe.top/#/Devdoc/hpm_con) 啦
+制作完成后请在HotPE中测试，没有问题后就可以 [投稿模块](https://docs.hotpe.top/devdoc/hpm_con.html) 啦
