@@ -51,7 +51,7 @@ EXEC %CurDir%\Drvindex.exe -b
 ![简单图床 - EasyImage](https://i.hotpe.top/i/2022/05/02/zbwkm6-0.png)
 
 制作好的模块就可以在HotPE中测试了
-自动加载模块：[如何加载HotPE模块——自动加载](https://wiki.hotpe.top/#/course/loadhpm?id=%e8%87%aa%e5%8a%a8%e5%8a%a0%e8%bd%bd )
+自动加载模块：[如何加载HotPE模块——自动加载](https://docs.hotpe.top/course/loadhpm.html )
 
 
 
