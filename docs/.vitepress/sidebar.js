@@ -54,7 +54,7 @@ export default [
     items: [
       { text: "获取授权", link: "/cooperation/permit" },
       { text: "ZnPE 授权信息", link: "/cooperation/ZnPE" },
-      { text: "RisePE 授权信息（已撤销）", link: "/cooperation/RisePE" },
+      { text: "RisePE 授权信息", link: "/cooperation/RisePE" },
       { text: "SunPE 授权信息", link: "/cooperation/SunPE" },
       { text: "Wown Project 授权信息", link: "/cooperation/WownProject" },
       { text: "HiPE 授权信息", link: "/cooperation/HiPE" },
