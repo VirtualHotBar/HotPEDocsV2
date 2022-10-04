@@ -8,6 +8,7 @@ export default defineConfig({
   lastUpdated: true,
   base: "/",
   head: [
+    // 51La统计
     ['script', { charset: 'UTF-8', id: 'LA_COLLECT', src: '//sdk.51.la/js-sdk-pro.min.js?id=Jfyz2AtpDiNlSRpE&ck=Jfyz2AtpDiNlSRpE' }],
     // 改变title的图标
     [
