@@ -15,7 +15,7 @@ hero:
       link: /started
     - theme: alt
       text: 查看仓库
-      link: https://www.hotpe.top/CodeWarehouse
+      link: https://github.com/VirtualHotBar/HotPEToolBox
 
 features:
   - title: 纯净
