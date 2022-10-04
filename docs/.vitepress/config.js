@@ -45,7 +45,7 @@ export default defineConfig({
     },
     lastUpdatedText: "最近更新于",
     socialLinks: [
-      { icon: 'github', link: 'https://www.hotpe.top/CodeWarehouse' }
+      { icon: 'github', link: 'https://github.com/VirtualHotBar/HotPEToolBox' }
     ],
   },
 });
