@@ -13,9 +13,9 @@
 [FastAPI](https://fastapi.tiangolo.com/zh/) —— API框架解决方案
 
 ## 云服务提供
-[Abyss](https://www.rsnocsi.cn/ "Abyss") —— 主站的服务器提供
+[Abyss](https://www.rsnocsi.cn/ "Abyss") —— 主站的托管
 
-[是小蓝鸭鸭](https://space.bilibili.com/66954389 "22NinEฅ") —— 下载站、博客的服务器提供
+[是小蓝鸭鸭](https://space.bilibili.com/66954389 "22NinEฅ") —— 下载站、博客的服务器提供(2022年4月3日到10月10日，虽然已经停止提供但还是很感谢)
 
 [Vercel](https://vercel.com/) —— 提供网站托管服务
 
