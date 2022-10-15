@@ -1,5 +1,5 @@
 # 使用Edgeless插件
-**推荐使用 <a href="https://wiki.hotpe.top/down.html#%E4%B8%8B%E8%BD%BD%E6%A8%A1%E5%9D%97" target="_blank" rel="noopener">HotPE模块</a>**
+**推荐使用 <a href="https://www.hotpe.top/Other/link.php?id=hpm-down-site" target="_blank" rel="noopener">HotPE模块</a>**
 
 从HotPE2.4Beta_build2022 2 13开始支持Edgeless插件，[插件下载站](https://zfile.edgeless.top/%E6%8F%92%E4%BB%B6%E5%8C%85 "插件下载站")，  [授权页面](https://wiki.edgeless.top/v2/cooperation/HotPE.html "授权页面")
 
