@@ -1,5 +1,6 @@
 # API
-## Get HPM List(Get)
+
+## 获取HotPE模块列表
 接口地址：https://api.hotpe.top/client/get/HPM_List
 
 请求方式：GET
