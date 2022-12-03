@@ -49,6 +49,10 @@
 
 [在下莫老师](https://www.bilibili.com/video/BV1k5411176A)
 
+## 帮挂QQ群
+
+[初欣瑾](https://myzwq.com/) —— 群2
+
 ## 其它帮助
 
 #### 帮助测试
