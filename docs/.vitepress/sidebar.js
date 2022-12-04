@@ -59,6 +59,7 @@ export default [
       { text: "SunPE 授权信息", link: "/cooperation/SunPE" },
       { text: "Wown Project 授权信息", link: "/cooperation/WownProject" },
       { text: "HiPE 授权信息", link: "/cooperation/HiPE" },
+      { text: "云装机PE 授权信息", link: "/cooperation/YzjPE" },
     ]
   }
 ];
