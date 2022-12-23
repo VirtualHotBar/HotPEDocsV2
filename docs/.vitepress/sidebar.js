@@ -13,7 +13,6 @@ export default [
     text: "总览",
     items: [
       { text: "状态", link: "/overview/state", },
-      { text: "关于", link: "/overview/about", },
       { text: "感谢", link: "/overview/thanks", },
       { text: "用户协议", link: "/overview/contract", },
       { text: "隐私政策", link: "/overview/privacy-policy", },
