@@ -10,7 +10,7 @@ HotPEModDeploy下载:https://down.hotpe.top/d/HotPE%E6%A8%A1%E5%9D%97/HotPEModDe
 目前HotPE有2种加载模式，默认模式和快速模式，通常你只需要实现默认模式。
 以下是HotPEModDeploy命令行的使用方法（/help内容）:
 ```bash
-HotPEModDeployTool2.1命令行帮助
+HotPEModDeployTool2.2命令行帮助
 ---------------------------------------------
 HotPEModDeploy [method] [path] [/lp:"loadPath"] [/h] [/c]
 ---------------------------------------------
@@ -38,7 +38,7 @@ quick:以快速模式进行加载，不必再重新加载直接执行脚本，�
 
 【其它参数】可选
 /h:隐藏UI
-/c:禁止校验，仅默认模式，快速模式默不校验
+/c:禁止校验，仅默认模式，快速模式和驱动包默不校验
 /help:帮助
 
 *注意：所有参数区分大小写
