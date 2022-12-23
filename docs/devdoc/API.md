@@ -1,4 +1,25 @@
 # API
+## 静默安装
+
+安装到系统：
+
+```bash
+HotPE安装包.exe /S [欲安装到的分区]
+```
+例：
+```bash
+HotPE安装包.exe /S C:\
+```
+---
+安装到U盘：
+
+```bash
+HotPE安装包.exe /U [U盘索引]
+```
+例：
+```bash
+HotPE安装包.exe /U 4
+```
 ## 检查更新
 接口地址：https://www.hotpe.top/API/HotPE/GetUpdate/
 
