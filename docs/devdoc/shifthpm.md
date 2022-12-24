@@ -56,18 +56,23 @@ FORX @\HotPEModule,HotPEModule,0,EXEC !%SystemRoot%\System32\HotPEModDeploy.exe 
 ```
 
 ### 打开方式注册表
-使用：挂载PE的Software注册表到HKEY_LOCAL_MACHINE\pe_soft，然后导入以下内容，卸载注册表
+使用：保存为.reg文件，PE里导入
 
 作用：实现HPM文件文件关联，双击文件以默认模式加载模块
 ```
 Windows Registry Editor Version 5.00
-[HKEY_LOCAL_MACHINE\pe_soft\Classes\.HPM]
+
+[HKEY_CLASSES_ROOT\.HPM]
 @="HotPE模块文件"
-[HKEY_LOCAL_MACHINE\pe_soft\Classes\.HPM\DefaultIcon]
+
+[HKEY_CLASSES_ROOT\.HPM\DefaultIcon]
 @="%SystemRoot%\\System32\\HotPEModDeploy.exe"
-[HKEY_LOCAL_MACHINE\pe_soft\Classes\.HPM\shell]
-[HKEY_LOCAL_MACHINE\pe_soft\Classes\.HPM\shell\open]
-[HKEY_LOCAL_MACHINE\pe_soft\Classes\.HPM\shell\open\command]
+
+[HKEY_CLASSES_ROOT\.HPM\shell]
+
+[HKEY_CLASSES_ROOT\.HPM\shell\open]
+
+[HKEY_CLASSES_ROOT\.HPM\shell\open\command]
 @="PECMD EXEC !HotPEModDeploy.exe default \"%1\""
 ```
 ### 说明
