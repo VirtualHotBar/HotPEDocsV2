@@ -57,6 +57,7 @@ export default [
       { text: "Wown Project 授权信息", link: "/cooperation/WownProject" },
       { text: "云装机PE 授权信息", link: "/cooperation/YzjPE" },
       { text: "夏天PE 授权信息", link: "/cooperation/夏天PE" },
+      { text: "GlassPE 授权信息", link: "/cooperation/GlassPE" },
     ]
   }
 ];
