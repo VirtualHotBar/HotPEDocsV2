@@ -52,9 +52,6 @@ export default [
     text: "合作洽谈",
     items: [
       { text: "获取授权", link: "/cooperation/permit" },
-      { text: "RisePE 授权信息", link: "/cooperation/RisePE" },
-      { text: "SunPE 授权信息", link: "/cooperation/SunPE" },
-      { text: "Wown Project 授权信息", link: "/cooperation/WownProject" },
       { text: "GlassPE 授权信息", link: "/cooperation/GlassPE" },
     ]
   }
