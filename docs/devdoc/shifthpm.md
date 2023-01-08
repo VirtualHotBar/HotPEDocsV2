@@ -3,11 +3,8 @@
 
 HotPEModDeploy下载:https://down.hotpe.top/d/HotPE%E6%A8%A1%E5%9D%97/HotPEModDeploy.exe
 
-请将HotPEModDeploy.exe放置到PE的System32文件夹下
+请独立参考HotPEModDeployTool命令行帮助完成：
 
-### 思路
-在PE中使用HotPE模块就是加载HotPE模块，HotPE模块的加载通过HotPEModDeploy实现，HotPEModDeploy是一个命令行工具。
-目前HotPE有2种加载模式，默认模式和快速模式，通常你只需要实现默认模式。
 以下是HotPEModDeploy命令行的使用方法（/help内容）:
 ```bash
 HotPEModDeployTool2.2命令行帮助
@@ -43,37 +40,3 @@ quick:以快速模式进行加载，不必再重新加载直接执行脚本，�
 
 *注意：所有参数区分大小写
 ```
-此时你看完帮助应已能大概的知道HotPEModDeploy的使用方法并想到集成HotPE模块的方法。
-
-如果你不能理解以上命令行使用方法，可以忽略，把以下的内容部署好就能实现以默认模式加载模块功能了。
-
-### Pecmd脚本
-使用：添加到Pecmd.ini
-
-作用：寻找HotPEModule文件夹并用HotPEModDeploy加载其中的模块
-```bash
-FORX @\HotPEModule,HotPEModule,0,EXEC !%SystemRoot%\System32\HotPEModDeploy.exe default %HotPEModule%
-```
-
-### 打开方式注册表
-使用：保存为.reg文件，PE里导入
-
-作用：实现HPM文件文件关联，双击文件以默认模式加载模块
-```
-Windows Registry Editor Version 5.00
-
-[HKEY_CLASSES_ROOT\.HPM]
-@="HotPE模块文件"
-
-[HKEY_CLASSES_ROOT\.HPM\DefaultIcon]
-@="%SystemRoot%\\System32\\HotPEModDeploy.exe"
-
-[HKEY_CLASSES_ROOT\.HPM\shell]
-
-[HKEY_CLASSES_ROOT\.HPM\shell\open]
-
-[HKEY_CLASSES_ROOT\.HPM\shell\open\command]
-@="PECMD EXEC !HotPEModDeploy.exe default \"%1\""
-```
-### 说明
-HotPE模块有校验和加密的，请勿尝试复刻。
