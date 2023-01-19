@@ -7,6 +7,6 @@
 ------------
 创建时间：2023-01-19
 
-项目负责人：JERRY-SYSTE
+项目负责人：JERRY-SYSTEM
 
 项目官网：https://www.znpe.top/
