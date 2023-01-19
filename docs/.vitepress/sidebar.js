@@ -53,6 +53,7 @@ export default [
     items: [
       { text: "获取授权", link: "/cooperation/permit" },
       { text: "GlassPE 授权信息", link: "/cooperation/GlassPE" },
+      { text: "ZnPE 授权信息", link: "/cooperation/ZnPE" },
     ]
   }
 ];
