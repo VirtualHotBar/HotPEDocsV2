@@ -5,7 +5,6 @@ title: HotPE Docs
 titleTemplate: 一个纯净、强大、优雅的开源Win11PE
 sidebar: false
 
-footer: <a href="https://github.com/Mister-Hope">Mr.Hope</a>
 
 hero:
   name: HotPE 工具箱
