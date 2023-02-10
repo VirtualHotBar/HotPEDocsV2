@@ -9,4 +9,4 @@
 
 项目负责人：爱玩电脑的命令提示符
 
-项目官网：https://glasspe.top/
+项目官网：https://glasspe.cn/
