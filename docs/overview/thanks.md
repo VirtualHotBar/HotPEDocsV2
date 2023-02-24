@@ -15,7 +15,7 @@
 ## 云服务提供
 [初欣瑾](https://myzwq.com/) —— 下载站和API的服务器提供
 
-[宋yx](https://cdnweb.icu) —— 世纪互联SP存储提供提供
+[宋yx](https://cdnweb.icu) —— 世纪互联SP存储提供
 
 [Abyss](https://www.rsnocsi.cn/) —— 主站的托管(2021年10月10日到2023年01月20日)
 
