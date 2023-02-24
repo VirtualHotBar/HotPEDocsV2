@@ -15,11 +15,13 @@
 ## 云服务提供
 [初欣瑾](https://myzwq.com/) —— 下载站和API的服务器提供
 
-[Abyss](https://www.rsnocsi.cn/) —— 主站的托管
+[宋yx](https://cdnweb.icu) —— 世纪互联SP存储提供提供
 
-[是小蓝鸭鸭](https://space.bilibili.com/66954389) —— 下载站、博客的服务器提供(2022年4月3日到10月10日，虽然已经停止提供但还是很感谢)
+[Abyss](https://www.rsnocsi.cn/) —— 主站的托管(2021年10月10日到2023年01月20日)
 
-[Vercel](https://vercel.com/) —— 提供网站托管服务
+[是小蓝鸭鸭](https://space.bilibili.com/66954389) —— 下载站、博客的服务器提供(2022年4月3日到10月10日)
+
+[Vercel](https://vercel.com/) —— 提供网站托管服务(文档)
 
 [Cloudflare](https://www.cloudflare.com/zh-cn/) —— 提供DNS解析服务
 
