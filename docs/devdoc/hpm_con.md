@@ -8,9 +8,9 @@
 AIDA64_VirtualHotBar_6.33.5700_全能的硬件检测工具.HPM
 ```
 
-如投稿10个以上模块，可加入[感谢名单](https://docs.hotpe.top/overview/thanks.html#%E6%A8%A1%E5%9D%97)！
-
 上传模块后，会对你的模块评估，通过则加入模块商店
+
+如投稿10个以上模块，可加入[感谢名单](https://docs.hotpe.top/overview/thanks.html#%E6%A8%A1%E5%9D%97)！
 
 ## 自主上传
 通过下面这个链接上传
