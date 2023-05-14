@@ -1,7 +1,7 @@
 # PE集成HotPE模块
 > 本章节将实现把HotPE模块加入到你的PE，从而实现HotPE模块的功能
 
-HotPEModDeploy下载:https://down.hotpe.top/d/HotPE%E6%A8%A1%E5%9D%97/HotPEModDeploy.exe
+[HotPEModDeploy下载](https://p0.hotpe.top/HotPE%E6%A8%A1%E5%9D%97/HotPEModDeploy.exe)
 
 请独立参考HotPEModDeployTool命令行帮助完成：
 
