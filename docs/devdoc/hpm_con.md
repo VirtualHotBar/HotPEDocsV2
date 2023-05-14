@@ -1,4 +1,13 @@
 # 模块投稿
+**注意：上传时请把模块命名成一下格式：**
+
+```
+软件名_打包者_软件版本号_模块介绍
+
+如：
+AIDA64_VirtualHotBar_6.33.5700_全能的硬件检测工具.HPM
+```
+
 ## 自主上传
 通过下面这个链接上传
 [上传链接](https://mzb8-my.sharepoint.com/:f:/g/personal/bbdsaa_mzb8_yukaidi_com/ElqWJo02yqFNl5r3UNj8PMIBklzwg1ygusRXOgO-36T_Jw)
