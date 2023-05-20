@@ -13,7 +13,7 @@ AIDA64_VirtualHotBar_6.33.5700_全能的硬件检测工具.HPM
 如投稿10个以上模块，可加入[感谢名单](https://docs.hotpe.top/overview/thanks.html#%E6%A8%A1%E5%9D%97)！
 
 ## 上传
-### 自主上传
+### 自主上传(推荐)
 通过下面这个链接上传
 [上传链接](https://mzb8-my.sharepoint.com/:f:/g/personal/bbdsaa_mzb8_yukaidi_com/ElqWJo02yqFNl5r3UNj8PMIBklzwg1ygusRXOgO-36T_Jw)
 
@@ -23,6 +23,6 @@ AIDA64_VirtualHotBar_6.33.5700_全能的硬件检测工具.HPM
 ## 通过列表
 已审核通过的模块：
 
-|名称|状态|时间|备注|
+|名称(大小)|时间|状态|备注|
 | --- | --- | --- | --- |
-|备份还原SGIv3_Iroha91_2.0.2022.1018_SGIv3(USM版).HPM|通过|2023-05-20|无
+|[SGIv3备份还原_Iroha91_2.0.2022.1018_SGIv3(USM版).HPM(18.1 MB)](https://down.hotpe.top/HotPE%E6%A8%A1%E5%9D%97/%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9F/SGIv3%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9F_Iroha91_2.0.2022.1018_SGIv3(USM%E7%89%88).HPM)|2023-05-20|通过|无
