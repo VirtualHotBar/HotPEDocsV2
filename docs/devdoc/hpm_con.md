@@ -20,9 +20,10 @@ AIDA64_VirtualHotBar_6.33.5700_全能的硬件检测工具.HPM
 ### Q群上传
 加入[HotPE的官方Q群](https://www.hotpe.top/QQGroup/),把打包好HPM发到群里，@一下管理员~
 
-## 通过列表
-已审核通过的模块：
+## 审核列表
+已审核的模块：
 
 |名称(大小)|时间|状态|备注|
 | --- | --- | --- | --- |
+|VLC_VirtualHotBar_3.0.18_VLC不止是强大的视频播放器.HPM|2023-05-21|驳回|打包者有误
 |[SGIv3备份还原_Iroha91_2.0.2022.1018_SGIv3(USM版).HPM(18.1 MB)](https://down.hotpe.top/HotPE模块/备份还原/SGIv3备份还原_Iroha91_2.0.2022.1018_SGIv3(USM版).HPM)|2023-05-20|通过|无
