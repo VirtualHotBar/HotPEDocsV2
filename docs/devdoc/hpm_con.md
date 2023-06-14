@@ -25,5 +25,7 @@ AIDA64_VirtualHotBar_6.33.5700_全能的硬件检测工具.HPM
 
 |名称(大小)|时间|状态|备注|
 | --- | --- | --- | --- |
+|[HotPE模块/网络浏览/FastGithub_LBZiXL_2.1.4_FastGithub是一个上网工具，他能让你轻松访问Github！.HPM(25.95M)](https://down.hotpe.top/HotPE模块/网络浏览/FastGithub_LBZiXL_2.1.4_FastGithub是一个上网工具，他能让你轻松访问Github！.HPM)|2023-06-14|通过|无
+|[潇然一键装机助理_潇然工作室_5.23.10.1RC15_让人人都成电脑系统装机大师.HPM(33.06M)](https://down.hotpe.top/HotPE模块/备份还原/潇然一键装机助理_潇然工作室_5.23.10.1RC15_让人人都成电脑系统装机大师.HPM)|2023-06-14|通过|无
 |VLC_VirtualHotBar_3.0.18_VLC不止是强大的视频播放器.HPM|2023-05-21|驳回|打包者有误
-|[SGIv3备份还原_Iroha91_2.0.2022.1018_SGIv3(USM版).HPM(18.1 MB)](https://down.hotpe.top/HotPE模块/备份还原/SGIv3备份还原_Iroha91_2.0.2022.1018_SGIv3(USM版).HPM)|2023-05-20|通过|无
+|[SGIv3备份还原_Iroha91_2.0.2022.1018_SGIv3(USM版).HPM(18.1M)](https://down.hotpe.top/HotPE模块/备份还原/SGIv3备份还原_Iroha91_2.0.2022.1018_SGIv3(USM版).HPM)|2023-05-20|通过|无
