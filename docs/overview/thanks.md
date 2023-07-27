@@ -8,22 +8,16 @@
 
 [slorelee](https://github.com/slorelee) —— WinXShell作者
 
-[qkqpttgf](https://github.com/qkqpttgf) —— OneManager下载站框架作者
-
-[FastAPI](https://fastapi.tiangolo.com/zh/) —— API框架解决方案
+[Alist](https://github.com/alist-org/alist) —— 文件直链解析
 
 ## 云服务提供
-[初欣瑾](https://myzwq.com/) —— 下载站和API的服务器提供
-
-[宋yx](https://cdnweb.icu) —— 世纪互联SP存储提供
+[初欣瑾](https://myzwq.com/) —— 下载站和API的服务器提供(2022年10月到2023年01月)
 
 [Abyss](https://www.rsnocsi.cn/) —— 主站的托管(2021年10月10日到2023年01月20日)
 
 [是小蓝鸭鸭](https://space.bilibili.com/66954389) —— 下载站、博客的服务器提供(2022年4月3日到10月10日)
 
 [Vercel](https://vercel.com/) —— 提供网站托管服务(文档)
-
-[Cloudflare](https://www.cloudflare.com/zh-cn/) —— 提供DNS解析服务
 
 ## 方案提供
 [@杉](http://www.firpe.cn/)
