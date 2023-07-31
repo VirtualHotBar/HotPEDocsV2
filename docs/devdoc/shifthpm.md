@@ -7,7 +7,7 @@
 
 以下是HotPEModDeploy命令行的使用方法（/help内容）:
 ```bash
-HotPEModDeployTool2.2命令行帮助
+HotPEModDeployTool2.3命令行帮助
 ---------------------------------------------
 HotPEModDeploy [method] [path] [/lp:"loadPath"] [/h] [/c]
 ---------------------------------------------
