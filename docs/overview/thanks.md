@@ -11,11 +11,11 @@
 [Alist](https://github.com/alist-org/alist) —— 文件直链解析
 
 ## 云服务提供
-[初欣瑾](https://myzwq.com/) —— 下载站和API的服务器提供(2022年10月到2023年01月)
+[@初欣瑾](https://myzwq.com/) —— 下载站和API的服务器提供(2022年10月到2023年01月)
 
-[Abyss](https://www.rsnocsi.cn/) —— 主站的托管(2021年10月10日到2023年01月20日)
+[@Abyss](https://www.rsnocsi.cn/) —— 主站的托管(2021年10月10日到2023年01月20日)
 
-[是小蓝鸭鸭](https://space.bilibili.com/66954389) —— 下载站、博客的服务器提供(2022年4月3日到10月10日)
+[@是小蓝鸭鸭](https://space.bilibili.com/66954389) —— 下载站、博客的服务器提供(2022年4月3日到10月10日)
 
 [Vercel](https://vercel.com/) —— 提供网站托管服务(文档)
 
@@ -35,9 +35,11 @@
 
 对HotPE模块做出卓越贡献的人（制作大量模块，推广等）：
 
-[LuRee](https://space.bilibili.com/1362479852)
+[@LuRee](https://space.bilibili.com/1362479852)
 
-[武噗_Txito](https://www.bilibili.com/video/BV1Vi4y1f7UV)
+[@武噗_Txito](https://www.bilibili.com/video/BV1Vi4y1f7UV)
+
+[@浪里个浪](https://www.itlog.vip/)
 
 ## 宣传
 
@@ -58,4 +60,4 @@
 
 @初欣瑾
 
-@浪里个浪
+[@浪里个浪](https://www.itlog.vip/)https://www.itlog.vip/
