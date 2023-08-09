@@ -55,6 +55,7 @@ export default [
       { text: "GlassPE 授权信息", link: "/cooperation/GlassPE" },
       { text: "ZnPE 授权信息", link: "/cooperation/ZnPE" },
       { text: "DawnPE 授权信息", link: "/cooperation/DawnPE" },
+      { text: "萝卜PE 授权信息", link: "/cooperation/LuoboPE" },
     ]
   }
 ];
