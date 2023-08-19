@@ -19,6 +19,8 @@
 
 [Vercel](https://vercel.com/) —— 提供网站托管服务(文档)
 
+[yukaidi](https://yukaidi.top/) —— 提供部分文件存储服务(系统镜像)
+
 ## 方案提供
 [@杉](http://www.firpe.cn/)
 
@@ -60,4 +62,4 @@
 
 @初欣瑾
 
-[@浪里个浪](https://www.itlog.vip/)https://www.itlog.vip/
+[@浪里个浪](https://www.itlog.vip/)
