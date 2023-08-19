@@ -11,11 +11,12 @@
 [Alist](https://github.com/alist-org/alist) —— 文件直链解析
 
 ## 云服务提供
-[@初欣瑾](https://myzwq.com/) —— 下载站和API的服务器提供(2022年10月到2023年01月)
 
 [@Abyss](https://www.rsnocsi.cn/) —— 主站的托管(2021年10月10日到2023年01月20日)
 
-[@是小蓝鸭鸭](https://space.bilibili.com/66954389) —— 下载站、博客的服务器提供(2022年4月3日到10月10日)
+[@是小蓝鸭鸭](https://space.bilibili.com/66954389) —— 下载站、博客的服务器提供(2022年4月3日到2022年10月10日)
+
+[@初欣瑾](https://myzwq.com/) —— 下载站和API的服务器提供(2022年10月到2023年01月)
 
 [@yukaidi](https://yukaidi.top/) —— 提供部分文件存储服务(系统镜像)
 
@@ -58,6 +59,6 @@
 
 @添
 
-@初欣瑾
+[@初欣瑾](https://myzwq.com/)
 
 [@浪里个浪](https://www.itlog.vip/)
