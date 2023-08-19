@@ -17,9 +17,7 @@
 
 [@是小蓝鸭鸭](https://space.bilibili.com/66954389) —— 下载站、博客的服务器提供(2022年4月3日到10月10日)
 
-[Vercel](https://vercel.com/) —— 提供网站托管服务(文档)
-
-@[yukaidi](https://yukaidi.top/) —— 提供部分文件存储服务(系统镜像)
+[@yukaidi](https://yukaidi.top/) —— 提供部分文件存储服务(系统镜像)
 
 ## 方案提供
 [@杉](http://www.firpe.cn/)
