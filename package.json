@@ -5,6 +5,7 @@
   "main": "index.js",
   "author": "VirtualHotBar",
   "license": "MIT",
+  "type": "module",
   "dependencies": {
     "vitepress": "^1.0.0-rc.20"
   },
