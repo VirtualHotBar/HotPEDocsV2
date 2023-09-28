@@ -56,6 +56,7 @@ export default [
       { text: "DawnPE 授权信息", link: "/cooperation/DawnPE" },
       { text: "萝卜PE 授权信息", link: "/cooperation/LuoboPE" },
       { text: "CowPE 授权信息", link: "/cooperation/CowPE" },
+      { text: "ComPE 授权信息", link: "/cooperation/ComPE" },
     ]
   }
 ];
