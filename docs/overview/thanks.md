@@ -42,6 +42,8 @@
 
 [@浪里个浪](https://www.itlog.vip/)
 
+[@Ra小小特](https://raxxt.top/)
+
 ## 宣传
 
 为HotPE的发展做出贡献的人（介绍、推荐HotPE等）:
