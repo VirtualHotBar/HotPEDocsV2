@@ -32,7 +32,6 @@ HotPE安装包.exe /U 4
 
 
 ## 检查更新
-**已弃用，采用GitHubAPI代替：https://api.github.com/repos/VirtualHotBar/HotPEToolBox/releases/latest**
 
 接口地址：https://api.hotpe.top/API/HotPE/GetUpdate/
 
