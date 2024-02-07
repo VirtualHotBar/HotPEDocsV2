@@ -54,10 +54,10 @@ export default [
       { text: "获取授权", link: "/cooperation/permit" },
       { text: "GlassPE 授权信息", link: "/cooperation/GlassPE" },
       { text: "DawnPE 授权信息", link: "/cooperation/DawnPE" },
-      { text: "萝卜PE 授权信息", link: "/cooperation/LuoboPE" },
       { text: "CowPE 授权信息", link: "/cooperation/CowPE" },
       { text: "ComPE 授权信息", link: "/cooperation/ComPE" },
       { text: "PanDaPE 授权信息", link: "/cooperation/PanDaPE" },
+      { text: "GlowPE 授权信息", link: "/cooperation/GlowPE" },
     ]
   }
 ];
