@@ -9,4 +9,4 @@
 
 项目负责人：GlowPE
 
-项目官网：https://studio.lovepcsys.top/
+项目官网：https://glow.lovepc.team/
