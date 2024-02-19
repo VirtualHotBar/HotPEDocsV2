@@ -49,15 +49,17 @@ export default [
       { text: "修改HotPE成为分支", link: "/devdoc/branch" },
     ]
   }, {
-    text: "合作洽谈",
+    text: "生态",
     items: [
-      { text: "获取授权", link: "/cooperation/permit" },
-      { text: "GlassPE 授权信息", link: "/cooperation/GlassPE" },
-      { text: "DawnPE 授权信息", link: "/cooperation/DawnPE" },
-      { text: "CowPE 授权信息", link: "/cooperation/CowPE" },
-      { text: "ComPE 授权信息", link: "/cooperation/ComPE" },
-      { text: "PanDaPE 授权信息", link: "/cooperation/PanDaPE" },
-      { text: "GlowPE 授权信息", link: "/cooperation/GlowPE" },
+      { text: "开放授权", link: "/cooperation/permit" },
+      { text: "示例项目", items:[
+      { text: "GlassPE", link: "/cooperation/GlassPE" },
+      { text: "DawnPE", link: "/cooperation/DawnPE" },
+      { text: "CowPE", link: "/cooperation/CowPE" },
+      { text: "ComPE", link: "/cooperation/ComPE" },
+      { text: "PanDaPE", link: "/cooperation/PanDaPE" },
+      { text: "GlowPE", link: "/cooperation/GlowPE" },
+      ]},
     ]
   }
 ];
