@@ -125,4 +125,4 @@
 |京东兄|4.00|21-09-17|-
 
 
-<script src="/docs/overview/statisticalDonations.js"></script>
+<script src="/statisticalDonations.js"></script>
