@@ -4,7 +4,7 @@
 > 
 > 目前HotPE处于入不敷出的状态，但还在可承受范围内。
 
-[捐赠页面](https://www.hotpe.top/donation "捐赠页面")
+[捐赠页面](https://www.hotpe.top/donation)
 ## 捐赠列表
 感谢以下网友对HotPE的捐赠!
 
