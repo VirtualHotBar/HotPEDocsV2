@@ -49,11 +49,12 @@ export default [
       { text: "修改HotPE成为分支", link: "/devdoc/branch" },
     ]
   }, {
-    text: "生态",
+    text: "生态体系",
     items: [
       { text: "开放授权", link: "/cooperation/permit" },
-      { text: "示例项目", items:[
-      { text: "GlassPE", link: "/cooperation/GlassPE" },
+      { text: "示例项目", 
+       items:[
+        { text: "GlassPE", link: "/cooperation/GlassPE" },
       { text: "DawnPE", link: "/cooperation/DawnPE" },
       { text: "CowPE", link: "/cooperation/CowPE" },
       { text: "ComPE", link: "/cooperation/ComPE" },
