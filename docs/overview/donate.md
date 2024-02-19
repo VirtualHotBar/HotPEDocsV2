@@ -124,3 +124,4 @@
 |月灵宵|3.36	|21-10-05	|-
 |京东兄|4.00|21-09-17|-
 
+<script src="https://docs.hotpe.top/statisticalDonations.js"></script>
