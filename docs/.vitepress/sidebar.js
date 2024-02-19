@@ -43,13 +43,15 @@ export default [
       { text: "须知", link: "/devdoc/notice" },
       { text: "环境", link: "/devdoc/dve_env" },
       { text: "API", link: "/devdoc/API" },
-      { text: "制作HotPE模块", link: "/devdoc/makehpm" },
-      { text: "模块投稿", link: "/devdoc/hpm_con" },
+
       { text: "修改HotPE成为分支", link: "/devdoc/branch" },
     ]
   }, {
     text: "模块生态",
     items: [
+            { text: "制作HotPE模块", link: "/devdoc/makehpm" },
+          { text: "模块投稿", link: "/devdoc/hpm_con" },
+      
       { text: "开放授权", link: "/cooperation/permit" },
       { text: "项目规范", link: "/cooperation/standard" },
       { text: "PE集成HotPE模块", link: "/devdoc/shifthpm" },
