@@ -60,7 +60,6 @@ export default [
               { text: "GlowPE", link: "/cooperation/GlowPE" },
             ]
           },
-          { text: "修改HotPE成为分支", link: "/devdoc/branch" },
         ]
       },
 
