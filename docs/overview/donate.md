@@ -123,3 +123,6 @@
 |HONNE|2.00	|21-10-04	|蟹蟹大佬,(不要挂我)
 |月灵宵|3.36	|21-10-05	|-
 |京东兄|4.00|21-09-17|-
+
+
+<script src="/docs/overview/statisticalDonations.js"></script>
