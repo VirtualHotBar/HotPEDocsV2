@@ -45,13 +45,13 @@ export default [
       { text: "API", link: "/devdoc/API" },
       { text: "制作HotPE模块", link: "/devdoc/makehpm" },
       { text: "模块投稿", link: "/devdoc/hpm_con" },
-      { text: "PE集成HotPE模块", link: "/devdoc/shifthpm" },
       { text: "修改HotPE成为分支", link: "/devdoc/branch" },
     ]
   }, {
-    text: "生态体系",
+    text: "模块生态",
     items: [
       { text: "开放授权", link: "/cooperation/permit" },
+      { text: "PE集成HotPE模块", link: "/devdoc/shifthpm" },
       { text: "示例项目", 
        items:[
         { text: "GlassPE", link: "/cooperation/GlassPE" },
