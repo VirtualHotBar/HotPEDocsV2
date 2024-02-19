@@ -51,6 +51,7 @@ export default [
     text: "模块生态",
     items: [
       { text: "开放授权", link: "/cooperation/permit" },
+      { text: "项目规范", link: "/cooperation/standard" },
       { text: "PE集成HotPE模块", link: "/devdoc/shifthpm" },
       { text: "示例项目", 
        items:[
