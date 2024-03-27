@@ -24,8 +24,7 @@ export default [
       { text: "HotPE是什么？", link: "/matter/what_winpe" },
       { text: "是否有后门,流氓行为？", link: "/matter/safety" },
       { text: "HotPE支持WIFI吗？", link: "/matter/wifi" },
-      { text: "为什么AIDA64没有图标？", link: "/matter/aida64" },
-      { text: "为什么启动LOGO不清晰？", link: "/matter/bootlogo.md" },
+      { text: "为什么AIDA64没有图标？", link: "/matter/aida64" }
     ]
   }, {
     text: "教程",
