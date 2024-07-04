@@ -16,5 +16,5 @@
 感谢：本文档排版参考[Edgeless Wiki](https://wiki.edgeless.top/v2/)
 
 # 介绍
-关于HotPE2.4的体验和特性介绍请观看视频内容：
-<iframe src="//player.bilibili.com/player.html?aid=685795279&amp;bvid=BV1xU4y1q7XE&amp;cid=769756043&page=1&high_quality=1&danmaku=0" allowfullscreen="allowfullscreen" width="100%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe>
+关于HotPE2.3的体验和特性介绍请观看视频内容：
+<iframe src="//player.bilibili.com/player.html?aid=548406136&amp;bvid=BV14q4y1V7dW&amp;cid=420251828&page=1&high_quality=1&danmaku=0" allowfullscreen="allowfullscreen" width="100%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe>
