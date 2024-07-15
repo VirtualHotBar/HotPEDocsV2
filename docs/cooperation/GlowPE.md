@@ -7,4 +7,4 @@
 ------------
 项目负责人：GlowPE
 
-项目官网：https://glow.lovepc.team/
+项目官网：https://pe.studio.000708.xyz/
