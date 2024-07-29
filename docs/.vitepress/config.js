@@ -22,12 +22,12 @@ export default defineConfig({
       'link',
       {
         rel: 'icon',
-        href: '/favicon.ico',
+        href: 'https://www.hotpe.top/favicon.ico',
       },
     ],
   ],
   themeConfig: {
-    logo: "/favicon.ico",
+    logo: "https://www.hotpe.top/favicon.ico",
     sidebar,
     nav: [
       {
