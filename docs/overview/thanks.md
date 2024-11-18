@@ -56,7 +56,7 @@
 
 [初欣瑾](https://myzwq.com/) —— 群2
 
-空白名网友 —— 群3
+PanghuChou —— 群3
 
 ## 其它帮助
 
