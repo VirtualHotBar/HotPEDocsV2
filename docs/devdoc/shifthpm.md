@@ -2,13 +2,13 @@
 > 本章节将实现把HotPE模块加入到你的PE，从而实现HotPE模块的功能
 
 ## 新版HPM加载器实现(推荐)
-仓库地址：https://github.com/VirtualHotBar/HPM-cil/
+仓库地址：https://github.com/VirtualHotBar/HPM-cli/
 
 HPM-cil为命令行工具，无图形界面，请参考以下命令行参数帮助实现HPM相关功能：
 ``` BATH
 HPM(HotPE Module) Manager
 
-Usage: hpm_cil.exe [OPTIONS] [HPMPath]
+Usage: hpm_cli.exe [OPTIONS] [HPMPath]
 
 Arguments:
   [HPMPath]  Sets the input file to use
