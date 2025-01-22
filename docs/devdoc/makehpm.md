@@ -1,5 +1,6 @@
 # 如何制作HotPE模块
 ## 获取模块制作工具
+<!--
 - 从安装包：点击 展开高级选项>HotPE模块>制作HotPE模块
 
 ![](https://p1.hotpe.top/i/2022/05/02/10fu9eu.png)
@@ -9,7 +10,7 @@
 
 ![](https://p1.hotpe.top/i/2022/05/02/10gdvxs.png)
 
-
+-->
 - 下载独立的HotPE模块制作工具，链接：https://p0.hotpe.top/HotPE%E6%A8%A1%E5%9D%97/HPMMake.exe
 
 ## 处理绿色软件
