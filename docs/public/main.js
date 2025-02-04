@@ -10,3 +10,4 @@ var _hmt = _hmt || [];
   hm.src = "https://hm.baidu.com/hm.js?c5d2e80c13f692ab9e3b8ca50bc49adb";
   var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
+})();
