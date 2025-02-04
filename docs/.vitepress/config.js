@@ -52,4 +52,7 @@ export default defineConfig({
       provider: 'local'
     }
   },
+    sitemap: {
+    hostname: 'https://docs.hotpe.top'
+  }
 });
