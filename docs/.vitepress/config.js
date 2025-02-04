@@ -8,33 +8,18 @@ export default defineConfig({
   lastUpdated: true,
   base: "/",
   head: [
-    ['script', { type: 'text/javascript'},`
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "ne6d69tu0p");
-  `],
-    ['script', { type: 'text/javascript'},`
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?c5d2e80c13f692ab9e3b8ca50bc49adb";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-  `],
+    ['script', { type: 'text/javascript',src:'/main.js'}],
     // 改变title的图标
     [
       'link',
       {
         rel: 'icon',
-        href: 'https://www.hotpe.top/favicon.ico',
+        href: '/favicon.ico',
       },
     ],
   ],
   themeConfig: {
-    logo: "https://www.hotpe.top/favicon.ico",
+    logo: "/favicon.ico",
     sidebar,
     nav: [
       {
