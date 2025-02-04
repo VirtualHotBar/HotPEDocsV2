@@ -48,5 +48,8 @@ export default defineConfig({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/VirtualHotBar/HotPEToolBox' }
     ],
+     search: {
+      provider: 'local'
+    }
   },
 });
