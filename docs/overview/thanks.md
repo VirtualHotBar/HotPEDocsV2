@@ -46,6 +46,8 @@
 
 [潇然工作室](https://www.xrgzs.top/)
 
+[孟轩网](https://www.mxw315.top/)
+
 ## 宣传
 
 为HotPE的发展做出贡献的人（介绍、推荐HotPE等）:
