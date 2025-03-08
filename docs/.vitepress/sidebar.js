@@ -51,6 +51,7 @@ export default [
           {
             text: "示例项目",
             items: [
+              { text: "FirPE", link: "/cooperation/FirPE" },
               { text: "GlassPE", link: "/cooperation/GlassPE" },
               { text: "DawnPE", link: "/cooperation/DawnPE" },
               { text: "CowPE", link: "/cooperation/CowPE" },
