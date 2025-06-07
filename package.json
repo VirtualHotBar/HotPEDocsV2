@@ -13,6 +13,5 @@
     "dev": "npx vitepress dev docs",
     "build": "npx vitepress build docs",
     "serve": "npx vitepress serve docs"
-  },
-  "packageManager": "yarn@3.2.1"
+  }
 }
