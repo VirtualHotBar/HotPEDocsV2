@@ -1,0 +1,33 @@
+name: Build and Deploy to Github Pages
+on:
+  push:
+    branches: [ main ]
+
+
+permissions:
+  contents: write
+  
+# 执行的一项或多项任务
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: 获取源码  🛎️
+      uses: actions/checkout@v3
+    - name: Node环境版本 🗜️
+      uses: actions/setup-node@v3
+      with:
+        node-version: 24
+    - name: 安装依赖 ⚙️
+      run: |
+        npm i pnpm -g
+        pnpm i
+    - name: 打包 🏗️
+      run: |
+        pnpm run build
+    - name: 部署 🚀
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        branch: dist
+        folder: dist
+        clean: true
