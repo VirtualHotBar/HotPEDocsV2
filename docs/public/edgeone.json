@@ -1,0 +1,19 @@
+{   
+  "caches": [
+    {
+      "source": "/*",
+      "cacheTtl": 604800
+    }
+  ],
+  "headers": [
+    {
+      "source": "/*",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=2592000"
+          }
+        ]
+    }
+  ]
+}
