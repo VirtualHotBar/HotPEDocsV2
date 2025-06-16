@@ -1,13 +1,12 @@
+document.write("<script>!function(p){"use strict";!function(t){var s=window,
+e=document,i=p,c="".concat("https:"===e.location.protocol?"https://":"http://","mxana.taco
+ol.com/zdz.js"),n=e.createElement("script"),r=e.getElementsByTagName("script")[0];n.type="te
+xt/javascript",n.setAttribute("charset","UTF-8"),n.async=!0,n.src=c,n.id="MXA_COLLECT",
+i.d=n;var o=function(){s.MXA&&s.MXA.init&&s.MXA.init(i)};n.onload=function(){o()},r.parent
+Node.insertBefore(n,r)}()}({id:"c1-D65yy2xb"});</script>");
+
     (function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
         t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "ne6d69tu0p");
-
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?407e6c7b912ca620b24fc8ffcd41a43c";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
