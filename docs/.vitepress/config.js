@@ -8,15 +8,17 @@ export default defineConfig({
   lastUpdated: true,
   base: "/",
   head: [
-    ['script', { type: 'text/javascript',src:'/main.js'}],
     // 改变title的图标
     [
-      'link',
+      "link",
       {
-        rel: 'icon',
-        href: '/favicon.ico',
+        rel: "icon",
+        href: "/favicon.ico",
       },
     ],
+    ["script", { src:"/main.js"}],
+    ["script", { id:"MXA_COLLECT",charset:"UTF-8",src:"//mxana.tacool.com/sdk.js"}],
+    ["script", {},`MXA.init({ id: "c1-f56IRjsR" })`],
   ],
   themeConfig: {
     logo: "/favicon.ico",
@@ -36,23 +38,23 @@ export default defineConfig({
       copyright: "Copyright © 2019-present VirtualHotBar",
     },
     editLink: {
-      style: 'github',
-      domain: 'github.com',
-      repo: 'VirtualHotBar/HotPEToolBox',
-      branch: 'main',
-      dir: 'docs',
-      text: '在 GitHub 上编辑此页',
-      pattern: 'https://github.com/VirtualHotBar/HotPEDocsV2/edit/main/docs/:path'
+      style: "github",
+      domain: "github.com",
+      repo: "VirtualHotBar/HotPEToolBox",
+      branch: "main",
+      dir: "docs",
+      text: "在 GitHub 上编辑此页",
+      pattern: "https://github.com/VirtualHotBar/HotPEDocsV2/edit/main/docs/:path"
     },
     lastUpdatedText: "最近更新于",
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/VirtualHotBar/HotPEToolBox' }
+      { icon: "github", link: "https://github.com/VirtualHotBar/HotPEToolBox" }
     ],
      search: {
-      provider: 'local'
+      provider: "local"
     }
   },
     sitemap: {
-    hostname: 'https://docs.hotpe.top'
+    hostname: "https://docs.hotpe.top"
   }
 });
