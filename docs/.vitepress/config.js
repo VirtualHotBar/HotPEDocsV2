@@ -18,7 +18,7 @@ export default defineConfig({
     ],
     ["script", { src:"/main.js"}],
     ["script", { id:"MXA_COLLECT",charset:"UTF-8",src:"//mxana.tacool.com/sdk.js"}],
-    ["script", {},`MXA.init({ id: "c1-f56IRjsR" })`],
+    ["script", {},`MXA.init({ id: "c1-D65yy2xb" })`],
   ],
   themeConfig: {
     logo: "/favicon.ico",
