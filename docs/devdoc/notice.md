@@ -3,7 +3,7 @@
 
 ## LOGO
 ### 头图
-![](https://p1.hotpe.top/i/p/1/64891fd783651.png)
+![](https://sc.sysri.cn/i/p/1/64891fd783651.png)
 ### 图标
 ![](/favicon.ico)
 ### 图标+文字
