@@ -8,7 +8,7 @@
 
 [slorelee](https://github.com/slorelee) —— WinXShell作者
 
-[Alist](https://github.com/alist-org/alist) —— 文件直链解析
+[Openlist](https://github.com/OpenListTeam/OpenList) —— 文件直链解析
 
 ## 云服务提供
 
