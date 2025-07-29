@@ -7,15 +7,15 @@
 
 1.用Dism++提取驱动
 
-![](https://pic.imgdb.cn/item/63a54b1f08b68301630b98b2.jpg)
+![](https://sc.sysri.cn/i/p/1/6888d24a1eb3e.png)
 
 2.打开HotPE模块制作工具，选择驱动程序，填写修改信息
 
-![](https://pic.imgdb.cn/item/63a54c1008b68301630da030.jpg)
+![](https://sc.sysri.cn/i/p/1/6888d27063a89.png)
 
 3.选择导出的驱动，然后点开始制作
 
-![](https://pic.imgdb.cn/item/63a54c3008b68301630dddf5.jpg)
+![](https://sc.sysri.cn/i/p/1/6888d281b8c4a.png)
 
 
 制作好的模块就可以在HotPE中测试了
