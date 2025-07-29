@@ -4,18 +4,18 @@
 
 插入U盘，打开安装包，点击右下角的U盘图标
 
-![](https://p1.hotpe.top/i/2022/05/02/zph2os.png)
+![](https://sc.sysri.cn/i/2022/05/02/zph2os.png)
 
 
 
 选择要安装的U盘，在这里可以进行个性化设置，点击“安装到U盘”，等待安装完成
 
-![](https://p1.hotpe.top/i/2022/05/02/zpmth9.png)
+![](https://sc.sysri.cn/i/2022/05/02/zpmth9.png)
 
 
 
 ## 安装到系统
 打开安装包，点击“展开高级选项”可以进行个性化设置，点击“安装到系统”，等待安装完成
 
-![](https://p1.hotpe.top/i/2022/05/02/zok3t2.png)
+![](https://sc.sysri.cn/i/2022/05/02/zok3t2.png)
 
