@@ -21,5 +21,5 @@ AboutText = 本工具用于管理和获取HotPE模块。且可将此工具用于
 AboutLink = HotPE官网->https://www.hotpe.top/
 
 [Path]
-HotPEModule = \HotPEModule\
+HotPEModule = \HotProgMods\
 ```
