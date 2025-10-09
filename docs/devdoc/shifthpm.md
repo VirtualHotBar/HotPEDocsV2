@@ -23,15 +23,15 @@ Options:
 
 ## 旧版HPM加载工具(将弃用)
 
-[HotPEModDeploy下载](https://p0.hotpe.top/HotPE%E6%A8%A1%E5%9D%97/HotPEModDeploy.exe)
+[HPMLoadCLI下载](https://p0.hotpe.top/HotPE%E6%A8%A1%E5%9D%97/HPMLoadCLI.exe)
 
-请独立参考HotPEModDeployTool命令行帮助完成：
+请独立参考HPMLoadCLI命令行帮助完成：
 
-以下是HotPEModDeploy命令行的使用方法（/help内容）:
+以下是HPMLoadCLI命令行的使用方法（/help内容）:
 ```bash
-HotPEModDeployTool2.3命令行帮助
+ HotProgMod Load CLI 2.4 命令行帮助
 ---------------------------------------------
-HotPEModDeploy [method] [path] [/lp:"loadPath"] [/h] [/c]
+HPMLoadCLI [method] [path] [/lp:"loadPath"] [/h] [/c]
 ---------------------------------------------
 
 【method】必须
@@ -49,7 +49,7 @@ quick:以快速模式进行加载，不必再重新加载直接执行脚本，�
 ---------------------------------------------
 
 【/lp:"loadPath"】可选
-当method = default时，此参数可选，默认为"X:\Program Files\HotPEModules\"
+当method = default时，此参数可选，默认为"X:\Program Files\HotProgMods\"(X:为系统盘盘符)
 当method = quick时，不应存在此参数
 ---------------------------------------------
 *说明：冒号和引号均为英文，必须存在引号
@@ -58,6 +58,8 @@ quick:以快速模式进行加载，不必再重新加载直接执行脚本，�
 【其它参数】可选
 /h:隐藏UI
 /help:帮助
+/wait:默认模式加载模块目录时等待完全加载完成
+/sort:默认模式加载模块目录时先根据文件名排序
 
 *注意：所有参数区分大小写
 ```
