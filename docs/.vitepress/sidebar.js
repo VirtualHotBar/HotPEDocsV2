@@ -23,7 +23,7 @@ export default [
     items: [
       { text: "HotPE是什么？", link: "/matter/what_winpe" },
       { text: "是否有后门,流氓行为？", link: "/matter/safety" },
-      { text: "安装到U盘时出错怎么办？", link: "/matter/install_ud_error" }
+      { text: "安装到U盘时出错怎么办？", link: "/matter/install_ud_error" },
       { text: "HotPE支持WIFI吗？", link: "/matter/wifi" },
       { text: "为什么AIDA64没有图标？", link: "/matter/aida64" }
     ]
