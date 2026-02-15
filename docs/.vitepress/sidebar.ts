@@ -1,21 +1,28 @@
-import fs from "fs"
-import path from "path"
-import process from "process"
+import fs from "fs";
+import path from "path";
+import process from "process";
+import type { DefaultTheme } from "vitepress";
 
-export default [
+interface SidebarItem {
+  text: string;
+  link?: string;
+  items?: SidebarItem[];
+}
+
+const sidebar: DefaultTheme.Sidebar = [
   {
     text: "开始",
     items: [
-      { text: "写在前面", link: "/started", },
+      { text: "写在前面", link: "/started" },
     ],
   },
   {
     text: "总览",
     items: [
-      { text: "状态", link: "/overview/state", },
-      { text: "感谢", link: "/overview/thanks", },
-      { text: "用户协议", link: "/overview/contract", },
-      { text: "关于捐赠", link: "/overview/donate", },
+      { text: "状态", link: "/overview/state" },
+      { text: "感谢", link: "/overview/thanks" },
+      { text: "用户协议", link: "/overview/contract" },
+      { text: "关于捐赠", link: "/overview/donate" },
     ],
   },
   {
@@ -25,9 +32,10 @@ export default [
       { text: "是否有后门,流氓行为？", link: "/matter/safety" },
       { text: "安装到U盘时出错怎么办？", link: "/matter/install_ud_error" },
       { text: "HotPE支持WIFI吗？", link: "/matter/wifi" },
-      { text: "为什么AIDA64没有图标？", link: "/matter/aida64" }
-    ]
-  }, {
+      { text: "为什么AIDA64没有图标？", link: "/matter/aida64" },
+    ],
+  },
+  {
     text: "教程",
     items: [
       { text: "如何下载HotPE及模块", link: "/course/down" },
@@ -36,13 +44,13 @@ export default [
       { text: "如何加载HotPE模块", link: "/course/loadhpm" },
       { text: "使用Edgeless插件", link: "/course/edgeless" },
       { text: "将驱动打包成HotPE模块", link: "/course/driver_hpm" },
-    ]
-  }, {
+    ],
+  },
+  {
     text: "模块生态",
     items: [
       { text: "制作HotPE模块", link: "/devdoc/makehpm" },
       { text: "模块投稿", link: "/devdoc/hpm_con" },
-
       {
         text: "开发者文档",
         items: [
@@ -59,24 +67,25 @@ export default [
               { text: "ComPE", link: "/cooperation/ComPE" },
               { text: "PanDaPE", link: "/cooperation/PanDaPE" },
               { text: "GlowPE", link: "/cooperation/GlowPE" },
-            ]
+            ],
           },
-        ]
+        ],
       },
-
-    ]
-  }
+    ],
+  },
 ];
 
-function autoGenerate(dir) {
-  let list = fs.readdirSync(path.join(process.cwd(), "docs", dir))
+function autoGenerate(dir: string): SidebarItem[] {
+  const list = fs.readdirSync(path.join(process.cwd(), "docs", dir));
   return list
-    .filter(name => name.endsWith(".md"))
-    .map(name => {
-      name = name.slice(0, -3)
+    .filter((name) => name.endsWith(".md"))
+    .map((name) => {
+      const nameWithoutExt = name.slice(0, -3);
       return {
-        text: name,
-        link: `/${dir}/${name}`
-      }
-    })
+        text: nameWithoutExt,
+        link: `/${dir}/${nameWithoutExt}`,
+      };
+    });
 }
+
+export default sidebar;

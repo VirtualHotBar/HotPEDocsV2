@@ -16,11 +16,10 @@ AIDA64_VirtualHotBar_6.33.5700_全能的硬件检测工具.HPM
 
 ## 上传
 ### 自主上传(推荐)
-通过下面这个链接上传
-[上传链接](https://api.hotpe.top/API/HotPE/ToLink/?id=hpm-con)
+通过下面这个工具上传:
+<HpmUpload />
 
-### Q群上传
-加入[HotPE的官方Q群](https://www.hotpe.top/QQGroup/),把打包好HPM发到群里，@一下管理员~
+如果工具无法使用，请使用备用[上传链接](https://api.hotpe.top/API/HotPE/ToLink/?id=hpm-con)
 
 ## 审核结果
 如你投稿的模块被移动到“已审核”文件夹，在HotPE Cilent中可搜索到说明已经审核通过，不能搜索到的为未审核通过(请核对模块投稿要求)。
