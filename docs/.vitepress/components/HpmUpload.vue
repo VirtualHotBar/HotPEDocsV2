@@ -15,8 +15,8 @@
         </div>
         <div :class="['tip', err ? 'bad' : 'good']">{{ err || '✅ 格式正确' }}</div>
         <div class="btns">
-          <button class="btn sec" @click="reset">重新选择</button>
-          <button class="btn pri" :disabled="!!err" @click="start">开始上传</button>
+          <button class="btn sec" :disabled="up" @click="reset">重新选择</button>
+          <button class="btn pri" :disabled="!!err || up" @click="start">开始上传</button>
         </div>
       </div>
 
@@ -40,10 +40,10 @@
 import { ref } from 'vue'
 
 interface Config {
-  api: string
-  share: string
-  chunk: number
-  s3: string[]
+  apiBase: string
+  shareCode: string
+  defaultChunkSize: number
+  s3StorageTypes: string[]
 }
 
 interface UploadSession {
@@ -62,7 +62,18 @@ interface Result {
   m: string
 }
 
-const C: Config = { api: 'https://pan.sysri.cn/api/v4', share: 'rMLHN', chunk: 2 << 20, s3: ['s3', 'oss', 'cos', 'obs'] }
+interface ApiResponse<T> {
+  code: number
+  msg?: string
+  data: T
+}
+
+const CONFIG: Config = {
+  apiBase: 'https://pan.sysri.cn/api/v4',
+  shareCode: 'rMLHN',
+  defaultChunkSize: 2 << 20,
+  s3StorageTypes: ['s3', 'oss', 'cos', 'obs']
+}
 
 const fileInput = ref<HTMLInputElement | null>(null)
 const file = ref<File | null>(null)
@@ -76,16 +87,16 @@ const sub = ref<string>('')
 
 const fmtSize = (b: number): string => {
   if (!b) return '0 B'
-  const i = [0, 1, 2, 3].find(i => b < 1024 ** (i + 1)) ?? 0
-  const unit = [' B', ' KB', ' MB', ' GB'][i]
-  return (b / 1024 ** i).toFixed(2) + unit
+  const units = ['B', 'KB', 'MB', 'GB']
+  const i = Math.min(Math.floor(Math.log(b) / Math.log(1024)), units.length - 1)
+  return `${(b / 1024 ** i).toFixed(2)} ${units[i]}`
 }
 
 const fmtSpeed = (b: number): string => {
   if (!b) return '0 B/s'
-  const i = [0, 1, 2, 3].find(i => b < 1024 ** (i + 1)) ?? 0
-  const unit = [' B/s', ' KB/s', ' MB/s', ' GB/s'][i]
-  return (b / 1024 ** i).toFixed(2) + unit
+  const units = ['B/s', 'KB/s', 'MB/s', 'GB/s']
+  const i = Math.min(Math.floor(Math.log(b) / Math.log(1024)), units.length - 1)
+  return `${(b / 1024 ** i).toFixed(2)} ${units[i]}`
 }
 
 const set = (t: string, s: string = '', p: number | null = null): void => {
@@ -113,6 +124,9 @@ const setFile = (f: File): void => {
   file.value = f
   err.value = checkName(f.name)
   res.value = null
+  pct.value = 0
+  text.value = ''
+  sub.value = ''
 }
 
 const reset = (): void => {
@@ -124,36 +138,55 @@ const reset = (): void => {
 }
 
 const triggerFileInput = (): void => {
-  if (fileInput.value) {
+  if (fileInput.value && !up.value) {
     fileInput.value.click()
   }
 }
 
-const api = async (u: string, o: RequestInit = {}): Promise<any> => {
-  const r = await fetch(C.api + u, o)
-  const d = await r.json()
-  if (d.code) throw new Error(d.msg || `code:${d.code}`)
-  return d.data
+const getErrMsg = (e: unknown): string => e instanceof Error ? e.message : '上传失败'
+
+const api = async <T>(path: string, options: RequestInit = {}): Promise<T> => {
+  const response = await fetch(CONFIG.apiBase + path, options)
+  let data: ApiResponse<T>
+  try {
+    data = await response.json()
+  } catch {
+    throw new Error(`请求失败 (${response.status})`)
+  }
+  if (!response.ok || data.code) throw new Error(data.msg || `请求失败 (${response.status})`)
+  return data.data
 }
 
-const checkPerm = (p: string): void => {
-  if (p && !(atob(p).charCodeAt(0) & 4)) {
+const requestOk = async (url: string, options?: RequestInit): Promise<void> => {
+  const response = await fetch(url, options)
+  if (!response.ok) throw new Error(`请求失败 (${response.status})`)
+}
+
+const checkPerm = (permission: string): void => {
+  if (!permission) return
+  let decoded = ''
+  try {
+    decoded = atob(permission)
+  } catch {
+    throw new Error('分享权限字段异常，无法解析')
+  }
+  if (!(decoded.charCodeAt(0) & 4)) {
     throw new Error('分享链接未开启上传权限')
   }
 }
 
 const start = async (): Promise<void> => {
-  if (!file.value || err.value) return
+  if (!file.value || err.value || up.value) return
   up.value = true
   set('获取分享信息...', '', 0)
   res.value = null
   try {
-    const shareInfo = await api(`/share/info/${C.share}?count_views=false`)
+    const shareInfo = await api<{ permissions: string }>(`/share/info/${CONFIG.shareCode}?count_views=false`)
     checkPerm(shareInfo.permissions)
     await upload(file.value)
     res.value = { t: 'ok', m: `✅ "${file.value.name}" 上传成功！` }
-  } catch (e: any) {
-    res.value = { t: 'bad', m: `❌ ${e.message}` }
+  } catch (e: unknown) {
+    res.value = { t: 'bad', m: `❌ ${getErrMsg(e)}` }
   } finally {
     up.value = false
   }
@@ -161,36 +194,39 @@ const start = async (): Promise<void> => {
 
 const upload = async (f: File): Promise<void> => {
   set('创建上传会话...', '', 5)
-  const uri = `cloudreve://${C.share}@share/${encodeURIComponent(f.name)}`
-  const s: UploadSession = await api('/file/upload', {
+  const uri = `cloudreve://${CONFIG.shareCode}@share/${encodeURIComponent(f.name)}`
+  const session = await api<UploadSession>('/file/upload', {
     method: 'PUT',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ uri, size: f.size, last_modified: Date.now() })
   })
-  const type = s.storage_policy.type
+  const type = session.storage_policy.type
   const handlers: Record<string, (s: UploadSession, f: File) => Promise<void>> = {
     onedrive: upOneDrive,
     local: upRelay
   }
   if (handlers[type]) {
-    await handlers[type](s, f)
-  } else if (C.s3.includes(type)) {
-    await upS3(s, f)
+    await handlers[type](session, f)
+  } else if (CONFIG.s3StorageTypes.includes(type)) {
+    await upS3(session, f)
   } else {
-    await upRelay(s, f)
+    await upRelay(session, f)
   }
 }
 
 const upXhr = (url: string, data: Blob, onProg?: (loaded: number, total: number, spd: number) => void): Promise<string | null> =>
   new Promise((res, rej) => {
     const x = new XMLHttpRequest()
-    const t0 = Date.now()
-    let last = 0
+    let lastLoaded = 0
+    let lastTick = Date.now()
     x.upload.onprogress = e => {
       if (!e.lengthComputable) return
-      const spd = (e.loaded - last) / ((Date.now() - t0) / 1e3)
+      const now = Date.now()
+      const elapsed = Math.max((now - lastTick) / 1e3, 0.001)
+      const spd = (e.loaded - lastLoaded) / elapsed
       onProg?.(e.loaded, e.total, spd)
-      last = e.loaded
+      lastLoaded = e.loaded
+      lastTick = now
     }
     x.onload = () => x.status < 300 ? res(x.getResponseHeader?.('ETag')?.replace(/"/g, '') || null) : rej(`上传失败 ${x.status}`)
     x.onerror = () => rej('网络错误')
@@ -201,10 +237,10 @@ const upXhr = (url: string, data: Blob, onProg?: (loaded: number, total: number,
 const upOneDrive = async (s: UploadSession, f: File): Promise<void> => {
   const url = s.upload_urls?.[0]
   if (!url) throw new Error('无上传地址')
-  const size = s.chunk_size || C.chunk
+  const size = s.chunk_size || CONFIG.defaultChunkSize
   const total = Math.ceil(f.size / size)
   let uploaded = 0
-  let startTime = Date.now()
+  const startTime = Date.now()
   for (let i = 0; i < total; i++) {
     const start = i * size
     const end = Math.min((i + 1) * size, f.size)
@@ -219,7 +255,8 @@ const upOneDrive = async (s: UploadSession, f: File): Promise<void> => {
         if (!e.lengthComputable) return
         const chunkLoaded = e.loaded
         const totalLoaded = uploaded + chunkLoaded
-        const spd = totalLoaded / ((Date.now() - startTime) / 1e3)
+        const elapsed = Math.max((Date.now() - startTime) / 1e3, 1)
+        const spd = totalLoaded / elapsed
         const p = Math.round(totalLoaded / f.size * 100)
         const left = Math.ceil((f.size - totalLoaded) / (spd || 1))
         set('上传中...', `${p}% · ${fmtSpeed(spd)} · 分片${i + 1}/${total} · 剩余${left}s`, p)
@@ -236,7 +273,7 @@ const upOneDrive = async (s: UploadSession, f: File): Promise<void> => {
       xhr.send(chunk)
     })
   }
-  await fetch(`${C.api}/callback/onedrive/${s.session_id}/${s.callback_secret}`, { method: 'POST' })
+  await requestOk(`${CONFIG.apiBase}/callback/onedrive/${s.session_id}/${s.callback_secret}`, { method: 'POST' })
   set('完成', '100%', 100)
 }
 
@@ -246,7 +283,8 @@ interface EtagInfo {
 }
 
 const upS3 = async (s: UploadSession, f: File): Promise<void> => {
-  const size = s.chunk_size || C.chunk
+  if (!s.upload_urls?.length || !s.completeURL) throw new Error('S3 上传会话信息不完整')
+  const size = s.chunk_size || CONFIG.defaultChunkSize
   const total = Math.ceil(f.size / size)
   const etags: EtagInfo[] = []
   for (let i = 0; i < total; i++) {
@@ -259,19 +297,19 @@ const upS3 = async (s: UploadSession, f: File): Promise<void> => {
   }
   set('完成上传...', '99%', 99)
   const xml = `<CompleteMultipartUpload>${etags.map(e => `<Part><PartNumber>${e.n}</PartNumber><ETag>"${e.etag}"</ETag></Part>`).join('')}</CompleteMultipartUpload>`
-  await fetch(s.completeURL!, { method: 'POST', headers: { 'Content-Type': 'application/xml' }, body: xml })
-  await fetch(`${C.api}/callback/s3/${s.session_id}/${s.callback_secret}`)
+  await requestOk(s.completeURL, { method: 'POST', headers: { 'Content-Type': 'application/xml' }, body: xml })
+  await requestOk(`${CONFIG.apiBase}/callback/s3/${s.session_id}/${s.callback_secret}`)
   set('完成', '100%', 100)
 }
 
 const upRelay = async (s: UploadSession, f: File): Promise<void> => {
-  const size = s.chunk_size || C.chunk
+  const size = s.chunk_size || CONFIG.defaultChunkSize
   const total = Math.ceil(f.size / size)
-  let t0 = Date.now()
+  const t0 = Date.now()
   for (let i = 0; i < total; i++) {
     const chunk = f.slice(i * size, Math.min((i + 1) * size, f.size))
     const t1 = Date.now()
-    await api(`/file/upload/${s.session_id}/${i}`, {
+    await api<unknown>(`/file/upload/${s.session_id}/${i}`, {
       method: 'POST',
       headers: { 'Content-Length': String(chunk.size) },
       body: chunk
