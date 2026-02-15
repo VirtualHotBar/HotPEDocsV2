@@ -13,7 +13,7 @@
     "@types/node": "^22.0.0"
   },
   "scripts": {
-    "dev": "npx vitepress dev docs",
+    "dev": "npx vitepress dev docs --port 3731",
     "build": "npx vitepress build docs",
     "serve": "npx vitepress serve docs"
   }
