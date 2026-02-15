@@ -4,13 +4,13 @@ HPM（Hot Program Module）是一种模块打包格式，最初用于 HotPE 的�
 
 ## 快速入口
 面向普通用户：
-- [制作 HPM 包（程序模块）](/devdoc/makehpm)
-- [将驱动打包成 HPM 包](/course/driver_hpm)
-- [模块投稿](/devdoc/hpm_con)
-- [如何加载 HPM 包](/course/loadhpm)
+- [打包软件模块](/devdoc/makehpm)
+- [打包驱动模块](/course/driver_hpm)
+- [投稿模块](/devdoc/hpm_con)
+- [如何加载模块](/course/loadhpm)
 
 面向开发者：
 - [开放授权](/cooperation/permit)
 - [项目规范](/cooperation/standard)
-- [PE 集成 HPM 功能](/devdoc/shifthpm)
+- [系统集成模块功能](/devdoc/shifthpm)
 
