@@ -56,6 +56,7 @@ interface HpmListItem {
 }
 
 interface HpmListGroup {
+  class?: string
   list?: HpmListItem[]
 }
 
@@ -133,6 +134,7 @@ const getShopNameSet = async (): Promise<Set<string>> => {
   const data = (await response.json()) as HpmListResponse
   const set = new Set<string>()
   for (const g of data.data || []) {
+    if ((g.class || '').trim() === '未审核投稿') continue
     for (const it of g.list || []) {
       for (const k of shopKeysForName(it.name)) set.add(k)
     }
