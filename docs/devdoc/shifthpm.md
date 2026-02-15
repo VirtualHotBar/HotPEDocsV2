@@ -1,5 +1,5 @@
-# PE集成HPM包
-> 本章节将实现把HPM包加入到你的PE，从而实现HPM包的功能
+# 系统集成模块功能
+> 本章节将实现把模块功能加入到你的系统，从而实现模块加载功能
 
 ## 新版HPM加载器实现(推荐)
 仓库地址：https://github.com/VirtualHotBar/HPM-cli/

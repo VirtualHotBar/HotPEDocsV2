@@ -41,7 +41,7 @@ const sidebar: DefaultTheme.Sidebar = [
       { text: "如何下载HotPE及模块", link: "/course/down" },
       { text: "如何安装HotPE到U盘或系统", link: "/course/install" },
       { text: "如何进入HotPE", link: "/course/intohotpe" },
-      { text: "如何加载HPM包", link: "/course/loadhpm" },
+      { text: "如何加载模块", link: "/course/loadhpm" },
       { text: "使用Edgeless插件", link: "/course/edgeless" },
 
     ],
@@ -58,7 +58,7 @@ const sidebar: DefaultTheme.Sidebar = [
         items: [
           { text: "开放授权", link: "/cooperation/permit" },
           { text: "项目规范", link: "/cooperation/standard" },
-          { text: "系统集成HPM包功能", link: "/devdoc/shifthpm" },
+          { text: "系统集成模块功能", link: "/devdoc/shifthpm" },
           {
             text: "示例项目",
             items: [
