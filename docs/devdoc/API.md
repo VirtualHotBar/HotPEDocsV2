@@ -21,7 +21,7 @@ HotPE安装包.exe /U [U盘索引]
 HotPE安装包.exe /U 4
 ```
 
-## 获取HotPE模块列表
+## 获取HPM包列表
 接口地址：https://api.hotpe.top/API/HotPE/GetHPMList/
 
 请求方式：GET

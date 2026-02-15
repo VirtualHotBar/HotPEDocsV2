@@ -41,22 +41,24 @@ const sidebar: DefaultTheme.Sidebar = [
       { text: "如何下载HotPE及模块", link: "/course/down" },
       { text: "如何安装HotPE到U盘或系统", link: "/course/install" },
       { text: "如何进入HotPE", link: "/course/intohotpe" },
-      { text: "如何加载HotPE模块", link: "/course/loadhpm" },
+      { text: "如何加载HPM包", link: "/course/loadhpm" },
       { text: "使用Edgeless插件", link: "/course/edgeless" },
-      { text: "将驱动打包成HotPE模块", link: "/course/driver_hpm" },
+
     ],
   },
   {
     text: "模块生态",
     items: [
-      { text: "制作HotPE模块", link: "/devdoc/makehpm" },
+      { text: "介绍与指南", link: "/devdoc/hpm_guide" },
+      { text: "打包软件模块", link: "/devdoc/makehpm" },
+      { text: "打包驱动模块", link: "/course/driver_hpm" },
       { text: "模块投稿", link: "/devdoc/hpm_con" },
       {
         text: "开发者文档",
         items: [
           { text: "开放授权", link: "/cooperation/permit" },
           { text: "项目规范", link: "/cooperation/standard" },
-          { text: "PE集成HotPE模块", link: "/devdoc/shifthpm" },
+          { text: "系统集成HPM包功能", link: "/devdoc/shifthpm" },
           {
             text: "示例项目",
             items: [

@@ -1,4 +1,4 @@
-# 如何加载HotPE模块
+# 如何加载HPM包
 
 ## 自动加载
 将模块文件放到HotPE安装磁盘下的HotProgMods文件夹，实现进入PE时自动加载
