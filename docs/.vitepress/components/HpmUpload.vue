@@ -62,7 +62,7 @@ interface Result {
   m: string
 }
 
-const C: Config = { api: 'http://pan.sysri.cn/api/v4', share: 'rMLHN', chunk: 2 << 20, s3: ['s3', 'oss', 'cos', 'obs'] }
+const C: Config = { api: 'https://pan.sysri.cn/api/v4', share: 'rMLHN', chunk: 2 << 20, s3: ['s3', 'oss', 'cos', 'obs'] }
 
 const fileInput = ref<HTMLInputElement | null>(null)
 const file = ref<File | null>(null)
